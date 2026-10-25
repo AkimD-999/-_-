@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2d6a4f" />
+  <title>Сытый кот — кафе домашней кухни</title>
+  <meta name="description" content="Кафе «Сытый кот»: домашняя кухня, большие порции и уют для всей семьи. Завтраки с 8:00, бизнес-ланчи за 15 минут, детское меню. Забронируйте столик онлайн." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= ШАПКА ================= -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Сытый кот — на главную">
+        <span class="logo__mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21.5a8.5 8.5 0 0 0 8.5-8.5V5.2a.9.9 0 0 0-1.4-.75L16 6.6a9.9 9.9 0 0 0-8 0L4.9 4.45A.9.9 0 0 0 3.5 5.2V13a8.5 8.5 0 0 0 8.5 8.5Z" />
+            <circle cx="9" cy="12" r="1" fill="currentColor" stroke="none" />
+            <circle cx="15" cy="12" r="1" fill="currentColor" stroke="none" />
+            <path d="M10.5 15.4a2.4 2.4 0 0 0 3 0" />
+            <path d="M12 13.2v1.2" />
+          </svg>
+        </span>
+        <span class="logo__text">
+          Сытый кот
+          <small>кафе домашней кухни</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#advantages">Преимущества</a></li>
+          <li><a class="nav__link" href="#menu">Меню</a></li>
+          <li><a class="nav__link" href="#reviews">Отзывы</a></li>
+          <li><a class="nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+          <span class="burger__box" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            Работаем с 2008 года
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            Сытно, вкусно<br />и <em>по-домашнему</em>
+          </h1>
+
+          <p class="hero__subtitle">
+            «Сытый кот» — это большие порции, свежие продукты и уют, в который хочется
+            возвращаться. Завтраки с 8:00, быстрые обеды и тёплые семейные ужины.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contacts">
+              Забронировать столик
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a class="btn btn--ghost" href="#menu">Смотреть меню</a>
+          </div>
+
+          <ul class="hero__facts">
+            <li><strong>450 ₽</strong><span>средний чек</span></li>
+            <li><strong>15 мин</strong><span>бизнес-ланч</span></li>
+            <li><strong>0+</strong><span>детское меню</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__circle">
+            <span class="hero__emoji">🐈</span>
+          </div>
+          <span class="hero__chip hero__chip--1">🍲 Домашний борщ</span>
+          <span class="hero__chip hero__chip--2">⭐ 4.9 из 5</span>
+          <span class="hero__chip hero__chip--3">👨‍👩‍👧 Уютно всей семьёй</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ПРЕИМУЩЕСТВА ================= -->
+    <section class="section" id="advantages" aria-labelledby="advantages-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Почему нас выбирают</p>
+          <h2 class="section__title" id="advantages-title">Готовим так, как готовили бы для себя</h2>
+          <p class="section__subtitle">Без полуфабрикатов, усилителей вкуса и «вчерашней» еды — только то, что мы сами едим каждый день.</p>
+        </header>
+
+        <ul class="adv-grid">
+          <li class="adv-card reveal" style="--delay:.05s">
+            <span class="adv-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 9.5h16V15a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9.5Z" />
+                <path d="M2 9.5h2M20 9.5h2M8.5 3v3.2M15.5 3v3.2" />
+              </svg>
+            </span>
+            <h3 class="adv-card__title">Домашняя кухня</h3>
+            <p class="adv-card__text">Каждое утро варим бульоны, лепим сырники и печём хлеб. Никаких замороженных котлет.</p>
+          </li>
+
+          <li class="adv-card reveal" style="--delay:.12s">
+            <span class="adv-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="8.5" />
+                <circle cx="12" cy="12" r="4" />
+              </svg>
+            </span>
+            <h3 class="adv-card__title">Большие порции</h3>
+            <p class="adv-card__text">Накормим так, что добавки не захочется. Порции, за которые нам не стыдно.</p>
+          </li>
+
+          <li class="adv-card reveal" style="--delay:.19s">
+            <span class="adv-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20.5S4 15.6 4 10.4A4.4 4.4 0 0 1 12 7.8a4.4 4.4 0 0 1 8 2.6c0 5.2-8 10.1-8 10.1Z" />
+              </svg>
+            </span>
+            <h3 class="adv-card__title">Уютно всей семьёй</h3>
+            <p class="adv-card__text">Детский уголок, стульчики, пеленальный столик и меню для самых маленьких гостей.</p>
+          </li>
+
+          <li class="adv-card reveal" style="--delay:.26s">
+            <span class="adv-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="8.5" />
+                <path d="M12 7.5V12l3.2 2" />
+              </svg>
+            </span>
+            <h3 class="adv-card__title">Быстрый обед</h3>
+            <p class="adv-card__text">Бизнес-ланч выносим за 15 минут — успеете пообедать даже в самый загруженный день.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= МЕНЮ ================= -->
+    <section class="section section--tint" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Наше меню</p>
+          <h2 class="section__title" id="menu-title">Блюда, которые просят добавки</h2>
+          <p class="section__subtitle">Классика домашней кухни в авторском исполнении. Меню обновляем каждый сезон.</p>
+        </header>
+
+        <div class="menu-grid">
+          <article class="dish reveal" style="--delay:.05s">
+            <div class="dish__media">
+              <span class="dish__tag">Хит</span>
+              <span class="dish__emoji" aria-hidden="true">🍲</span>
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Домашний борщ</h3>
+              <p class="dish__text">Насыщенный бульон, томлёная говядина, ложка сметаны и пампушка с чесноком.</p>
+              <div class="dish__foot">
+                <span class="dish__price">290 ₽</span>
+                <a class="dish__link" href="#contacts" aria-label="Заказать домашний борщ">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish reveal" style="--delay:.1s">
+            <div class="dish__media">
+              <span class="dish__emoji" aria-hidden="true">🍖</span>
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Котлета по-домашнему</h3>
+              <p class="dish__text">Сочная котлета из рубленой говядины, картофельное пюре и солёный огурчик.</p>
+              <div class="dish__foot">
+                <span class="dish__price">390 ₽</span>
+                <a class="dish__link" href="#contacts" aria-label="Заказать котлету по-домашнему">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish reveal" style="--delay:.15s">
+            <div class="dish__media">
+              <span class="dish__tag dish__tag--new">Новинка</span>
+              <span class="dish__emoji" aria-hidden="true">🥞</span>
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Сырники со сгущёнкой</h3>
+              <p class="dish__text">Нежные, как у бабушки. С домашней сгущёнкой и свежими сезонными ягодами.</p>
+              <div class="dish__foot">
+                <span class="dish__price">250 ₽</span>
+                <a class="dish__link" href="#contacts" aria-label="Заказать сырники">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish reveal" style="--delay:.05s">
+            <div class="dish__media">
+              <span class="dish__emoji" aria-hidden="true">🍜</span>
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Куриный суп с лапшой</h3>
+              <p class="dish__text">Лёгкий прозрачный бульон, домашняя лапша, зелень и куриное филе.</p>
+              <div class="dish__foot">
+                <span class="dish__price">240 ₽</span>
+                <a class="dish__link" href="#contacts" aria-label="Заказать куриный суп">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish reveal" style="--delay:.1s">
+            <div class="dish__media">
+              <span class="dish__tag dish__tag--kids">Детям</span>
+              <span class="dish__emoji" aria-hidden="true">🍗</span>
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Набор «Котёнок»</h3>
+              <p class="dish__text">Куриные наггетсы, пюре, фруктовый сок и маленький сюрприз в подарок.</p>
+              <div class="dish__foot">
+                <span class="dish__price">320 ₽</span>
+                <a class="dish__link" href="#contacts" aria-label="Заказать детский набор Котёнок">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish reveal" style="--delay:.15s">
+            <div class="dish__media">
+              <span class="dish__emoji" aria-hidden="true">🍹</span>
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Фирменный лимонад</h3>
+              <p class="dish__text">Мята, лайм и немного мёда. Освежает лучше, чем что-либо ещё в городе.</p>
+              <div class="dish__foot">
+                <span class="dish__price">180 ₽</span>
+                <a class="dish__link" href="#contacts" aria-label="Заказать лимонад">Заказать</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ОТЗЫВЫ ================= -->
+    <section class="section" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Отзывы гостей</p>
+          <h2 class="section__title" id="reviews-title">Нас рекомендуют друзьям</h2>
+          <p class="section__subtitle">Средняя оценка на картах — 4.9 из 5. Вот что пишут наши гости.</p>
+        </header>
+
+        <div class="reviews-grid">
+          <article class="review reveal" style="--delay:.05s">
+            <p class="review__stars" aria-label="Оценка 5 из 5">★★★★★</p>
+            <blockquote class="review__text">
+              «Ходим всей семьёй каждые выходные. Дети в восторге от детского уголка,
+              а мы — от борща. Порции такие, что уходим с собой в контейнере!»
+            </blockquote>
+            <footer class="review__author">
+              <span class="review__avatar" aria-hidden="true">А</span>
+              <span class="review__meta">
+                <strong>Анна</strong>
+                <small>мама двоих детей</small>
+              </span>
+            </footer>
+          </article>
+
+          <article class="review reveal" style="--delay:.12s">
+            <p class="review__stars" aria-label="Оценка 5 из 5">★★★★★</p>
+            <blockquote class="review__text">
+              «Обедаю здесь почти каждый день. Бизнес-ланч приносят минут за десять,
+              еда как дома, а персонал уже знает мой заказ. Лучшее место в районе.»
+            </blockquote>
+            <footer class="review__author">
+              <span class="review__avatar" aria-hidden="true">Д</span>
+              <span class="review__meta">
+                <strong>Дмитрий</strong>
+                <small>работает рядом</small>
+              </span>
+            </footer>
+          </article>
+
+          <article class="review reveal" style="--delay:.19s">
+            <p class="review__stars" aria-label="Оценка 5 из 5">★★★★★</p>
+            <blockquote class="review__text">
+              «Напоминает кухню моей мамы. Тихо, светло, никто не торопит.
+              Прихожу с внуками — их всегда угощают чем-нибудь вкусным.»
+            </blockquote>
+            <footer class="review__author">
+              <span class="review__avatar" aria-hidden="true">В</span>
+              <span class="review__meta">
+                <strong>Валентина Петровна</strong>
+                <small>постоянный гость</small>
+              </span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ФОРМА / КОНТАКТЫ ================= -->
+    <section class="section section--tint" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Бронирование</p>
+          <h2 class="section__title" id="contacts-title">Забронируйте столик за 30 секунд</h2>
+          <p class="section__subtitle">Оставьте заявку — перезвоним в течение 10 минут и подтвердим бронь.</p>
+        </header>
+
+        <div class="contact">
+          <!-- Форма -->
+          <div class="contact__card reveal">
+            <form class="form" id="booking-form" novalidate>
+              <div class="form__row">
+                <div class="field">
+                  <label class="field__label" for="name">Ваше имя</label>
+                  <input class="field__input" id="name" name="name" type="text" placeholder="Как к вам обращаться?" autocomplete="name" required />
+                  <span class="field__error" data-error-for="name"></span>
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="phone">Телефон</label>
+                  <input class="field__input" id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" required />
+                  <span class="field__error" data-error-for="phone"></span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="guests">Сколько вас будет?</label>
+                <select class="field__input" id="guests" name="guests">
+                  <option value="1-2">1–2 гостя</option>
+                  <option value="3-4" selected>3–4 гостя</option>
+                  <option value="5-8">5–8 гостей</option>
+                  <option value="9+">Больше 8 (банкет)</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="message">Комментарий <span class="field__hint">(необязательно)</span></label>
+                <textarea class="field__input" id="message" name="message" rows="3" placeholder="Например: столик у окна и детский стульчик"></textarea>
+              </div>
+
+              <label class="checkbox">
+                <input type="checkbox" id="consent" name="consent" required />
+                <span>Согласен с <a href="#">политикой конфиденциальности</a> и обработкой персональных данных</span>
+              </label>
+              <span class="field__error" data-error-for="consent"></span>
+
+              <button class="btn btn--primary btn--block" type="submit">Забронировать столик</button>
+              <p class="form__note">Никакого спама — только подтверждение брони.</p>
+            </form>
+
+            <div class="form-success" id="form-success" hidden>
+              <span class="form-success__icon" aria-hidden="true">🐱</span>
+              <h3 class="form-success__title">Спасибо! Заявка принята</h3>
+              <p class="form-success__text">Мы перезвоним в течение 10 минут, чтобы подтвердить вашу бронь. До встречи в «Сытом коте»!</p>
+              <button class="btn btn--ghost" type="button" id="form-reset">Отправить ещё одну заявку</button>
+            </div>
+          </div>
+
+          <!-- Контактная информация -->
+          <aside class="contact__info reveal" style="--delay:.1s" aria-label="Контактная информация">
+            <h3 class="contact__info-title">Мы рядом с вами</h3>
+
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z" />
+                    <circle cx="12" cy="10" r="2.6" />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Адрес</strong>
+                  г. Москва, ул. Зелёная, 12 (5 минут от метро)
+                </span>
+              </li>
+
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3Z" />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Телефон</strong>
+                  <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                </span>
+              </li>
+
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="8.5" />
+                    <path d="M12 7.5V12l3.2 2" />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Часы работы</strong>
+                  Пн–Пт: 8:00–23:00 · Сб–Вс: 9:00–00:00
+                </span>
+              </li>
+
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="5" width="18" height="14" rx="3" />
+                    <path d="m4 7 8 6 8-6" />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Почта</strong>
+                  <a href="mailto:hello@sytiy-kot.ru">hello@sytiy-kot.ru</a>
+                </span>
+              </li>
+            </ul>
+
+            <p class="contact__note">Парковка бесплатная для гостей кафе. Есть летняя веранда.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= ПОДВАЛ ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <a class="logo logo--light" href="#top">
+          <span class="logo__mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21.5a8.5 8.5 0 0 0 8.5-8.5V5.2a.9.9 0 0 0-1.4-.75L16 6.6a9.9 9.9 0 0 0-8 0L4.9 4.45A.9.9 0 0 0 3.5 5.2V13a8.5 8.5 0 0 0 8.5 8.5Z" />
+              <circle cx="9" cy="12" r="1" fill="currentColor" stroke="none" />
+              <circle cx="15" cy="12" r="1" fill="currentColor" stroke="none" />
+              <path d="M10.5 15.4a2.4 2.4 0 0 0 3 0" />
+              <path d="M12 13.2v1.2" />
+            </svg>
+          </span>
+          <span class="logo__text">Сытый кот<small>кафе домашней кухни</small></span>
+        </a>
+        <p class="footer__text">Кормим вкусно и по-домашнему с 2008 года. Приходите голодными — уйдёте сытыми.</p>
+
+        <ul class="socials" aria-label="Мы в соцсетях">
+          <li><a class="socials__link" href="#">Telegram</a></li>
+          <li><a class="socials__link" href="#">VK</a></li>
+          <li><a class="socials__link" href="#">Дзен</a></li>
+        </ul>
+      </div>
+
+      <nav class="footer__col" aria-label="Навигация в подвале">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__list">
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#menu">Меню</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contacts">Бронирование</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__list">
+          <li>г. Москва, ул. Зелёная, 12</li>
+          <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+          <li><a href="mailto:hello@sytiy-kot.ru">hello@sytiy-kot.ru</a></li>
+          <li>Пн–Пт 8:00–23:00 · Сб–Вс 9:00–00:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2025</span> Кафе «Сытый кот». Все права защищены.</p>
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
